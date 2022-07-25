@@ -1,0 +1,104 @@
+@import '../../../../../sass/variables';
+
+.wrapper {
+   width: 100%;
+   padding: 20px 0 30px;
+   display: flex;
+}
+
+.info {
+   display: flex;
+   align-items: start;
+}
+
+.image {
+   position: relative;
+
+   &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+
+      width: 0;
+      height: 0;
+      border-radius: 30px;
+      border: 1px solid transparent;
+      transition: all .3s ease;
+      background: transparent;
+   }
+
+   &:hover {
+      &::before {
+         width: 60px;
+         height: 60px;
+         border: 3px solid $_black;
+      }
+   }
+}
+
+.link {
+   display: block;
+   max-width: 50px;
+   max-height: 50px;
+   border-radius: 25px;
+   overflow: hidden;
+   position: relative;
+   z-index: 2;
+}
+
+
+.data {
+   margin: 0 0 0 10px;
+   width: 200px;
+   padding: 0 10px 0 0;
+}
+
+.name {
+   font-family: $ff1;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 17px;
+   color: $_white;
+
+   margin: 0 0 8px 0;
+}
+
+.status {
+   font-family: $ff3;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 14px;
+   color: $_greyLight;
+}
+
+.button {
+   width: 110px;
+   border-radius: 18px;
+   height: 44px;
+   background-color: $_blue;
+   padding: 0 20px;
+   transition: all .3s ease;
+
+   font-family: $ff1;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 44px;
+   color: $_white;
+
+   &:hover {
+      background: $_white;
+      box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.15);
+      color: $_black;
+   }
+}
+
+.active {
+   background-color: $_black;
+   color: $_greyLight;
+}

@@ -1,0 +1,43 @@
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  text-align: center;
+  display: inline-block;
+  padding: 6px 0;
+  width: 45px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.number:hover {
+  color: #74C3EE;
+}
+
+.active {
+  color: #74C3EE;
+  position: relative;
+}
+.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 1px;
+  background-color: #74C3EE;
+}

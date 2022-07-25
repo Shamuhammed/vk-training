@@ -1,0 +1,48 @@
+@import '../../../../../sass/variables';
+
+.item {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.number {
+   text-align: center;
+   display: inline-block;
+   padding: 6px 0;
+   width: 45px;
+   cursor: pointer;
+   user-select: none;
+
+   font-family: $ff1;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 17px;
+   color: $_white;
+
+   transition: all .3s ease;
+
+   &:hover {
+      color: $_blue;
+   }
+}
+
+.active {
+   //background: $_blue;
+   color: $_blue;
+   position: relative;
+
+   &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+
+      width: 50%;
+      height: 1px;
+      background-color: $_blue;
+   }
+}

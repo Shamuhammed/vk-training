@@ -1,0 +1,9 @@
+@import '../../../sass/variables';
+
+.wrapper {
+   width: 100%;
+   min-height: 100%;
+   border-radius: 50px;
+   padding: 30px;
+   background-color: $_grey;
+}

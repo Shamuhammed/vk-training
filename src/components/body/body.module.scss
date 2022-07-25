@@ -1,0 +1,35 @@
+@import '../../sass/variables';
+.wrapper {
+   width: 100%;
+   min-height: 100vh;
+   background: $_black;   
+
+   display: grid;
+   grid-template: minmax(80px, auto) 1fr / minmax(180px, auto) 1fr minmax(180px, auto);
+   grid-template-areas: 
+      "sideBarLeft header sideBarRight"
+      "sideBarLeft main sideBarRight"
+   ;
+}
+
+.header {
+   display: block;
+   grid-area: header;
+}
+
+.main {
+   display: block;
+   grid-area: main;
+}
+
+.sideBarLeft {
+   display: block;
+   grid-area: sideBarLeft;
+}
+.sideBarRight {
+   display: block;
+   grid-area: sideBarRight;
+}
+
+
+
