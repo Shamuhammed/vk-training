@@ -3,25 +3,18 @@ import React from "react";
 import s from './body.module.css'
 import Main from "./main/main";
 //components
-import SideBarLeft from "./sideBarLeft/sideBarLeft";
-import SideBarRight from "./sideBarRight/sideBarRight";
+import Header from "./header/header";
 
 const Body = (props) => {
 
    return (
-      <div className={s.wrapper}>
+      <div className={s.container}>
          <header className={s.header}>
-            <h2>header</h2>
+            <Header />
          </header>
          <main className={s.main}>
             <Main />
          </main>
-         <aside className={s.sideBarLeft}>
-            <SideBarLeft />
-         </aside>
-         <aside className={s.sideBarRight}>
-            <SideBarRight />
-         </aside>
       </div>
    );
 }

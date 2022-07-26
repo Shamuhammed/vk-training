@@ -1,0 +1,22 @@
+@import '../../sass/style.scss';
+
+.link {
+   display: block;
+   width: 200px;
+   height: 30px;
+   text-align: center;
+   background-color: $_blue;
+   cursor: pointer;
+   transition: all .2s ease;
+   border-radius: 2px;
+
+   font-family: $ff1;
+   font-size: 12.5px;
+   line-height: 30px;
+   letter-spacing: 0.04em;
+   color: $_white;
+
+   &:hover {
+      opacity: .9;
+   }
+}

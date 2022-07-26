@@ -127,6 +127,21 @@ input[type=text], input[type=email], input[type=tel], textarea {
 .title-block__title::after {
   content: "";
 }
-.App {
-  background-color: #dce1e6;
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(230px, auto) 1fr;
+  grid-template-areas: "narrow wide";
+  gap: 16px;
+}
+
+.narrowColumn {
+  grid-area: narrow;
+  width: 100%;
+}
+
+.wideColumn {
+  grid-area: wide;
+  width: 100%;
 }

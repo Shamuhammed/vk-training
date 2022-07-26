@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;500;600;700&display=swap");
+.wrapper {
+  max-width: 990px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+}
+
+.container {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  padding: 0 0 80% 0;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.container p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 150%;
+  padding: 40px 20px;
+  color: #1F2023;
+}
+
+.sketch {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.sketch img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}

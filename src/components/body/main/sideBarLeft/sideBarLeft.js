@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from 'react-router-dom';
 //css
 import s from './sideBarLeft.module.css'
 import SideBarNav from "./sideBarNav/sideBarNav";
@@ -9,7 +8,7 @@ import SideBarLogo from "./sideBarLogo/sideBarLogo";
 const SideBarLeft = (props) => {
 
    return (
-      <div className={s.wrapper}>
+      <div className={s.container}>
          <SideBarLogo />
          <SideBarNav />
          <SideBarSettings />

@@ -3,10 +3,10 @@ import React, { useEffect } from "react";
 import s from './users.module.css'
 // components
 import UsersItem from "./usersItem/usersItem";
-import Preload from '../../../../commons/preload/preload';
+import Preload from '../../../../../commons/preload/preload';
 import Pagination from "./pagination/pagination";
 // utils
-import { funcPagination } from "../../../../utils/utils";
+import { funcPagination } from "../../../../../utils/utils";
 
 
 const Users = (props) => {

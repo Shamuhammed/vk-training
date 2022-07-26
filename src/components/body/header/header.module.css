@@ -8,22 +8,27 @@
 }
 
 .container {
+  background-color: #fff;
+  height: 100%;
+}
+
+.headerContent {
   width: 100%;
   min-height: 100%;
   display: grid;
   grid-template-columns: minmax(150px, auto) 1fr;
-  grid-template-areas: "sideBar content";
+  grid-template-areas: "logo main";
   gap: 16px;
 }
 
-.sideBar {
-  grid-area: sideBar;
+.logo {
+  grid-area: logo;
   width: 100%;
   height: 100%;
 }
 
-.content {
-  grid-area: content;
+.main {
+  grid-area: main;
   width: 100%;
   height: 100%;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Avatar from "../../../../../commons/avatar/avatar";
-import { statusLenght } from "../../../../../utils/utils";
+import Avatar from "../../../../../../commons/avatar/avatar";
+import { statusLenght } from "../../../../../../utils/utils";
 //css
 import s from './usersItem.module.css'
 // components

@@ -127,6 +127,21 @@ input[type=text], input[type=email], input[type=tel], textarea {
 .title-block__title::after {
   content: "";
 }
-.App {
-  background-color: #dce1e6;
+.link {
+  display: block;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  background-color: #5181b8;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 2px;
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 12.5px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.link:hover {
+  opacity: 0.9;
 }

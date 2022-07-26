@@ -127,6 +127,9 @@ input[type=text], input[type=email], input[type=tel], textarea {
 .title-block__title::after {
   content: "";
 }
-.App {
-  background-color: #dce1e6;
+.container {
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 15px 20px;
 }

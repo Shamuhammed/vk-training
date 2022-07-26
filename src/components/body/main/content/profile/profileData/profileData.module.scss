@@ -1,0 +1,6 @@
+@import '../../../../../../sass/style.scss';
+
+.container {
+   @include block;
+   padding: 15px 20px;
+}

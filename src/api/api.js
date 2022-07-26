@@ -23,3 +23,18 @@ export const UsersAPI = {
       return instance.delete(`follow/${userId}`);
    }
 }
+export const ProfileAPI = {
+   getUsers(currentPage = 1, pageSize) {
+      return instance.get(`users?page=${currentPage}&count=${pageSize}`)
+         .then(response => {
+            return response;
+         });
+   },
+   followUser(userId) {
+      return instance.post(`follow/${userId}`);
+   },
+   
+   unfollowUser(userId) {
+      return instance.delete(`follow/${userId}`);
+   }
+}

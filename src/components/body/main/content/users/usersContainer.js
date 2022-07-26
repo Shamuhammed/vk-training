@@ -4,11 +4,11 @@ import { connect } from "react-redux";
 import {
    getAllUsers, getCurrentPage, getTotalCount,
    getPageSize, getIsFetching, getPaginationLength
-} from "../../../../selectors/userReducerSelectors";
+} from "../../../../../selectors/userReducerSelectors";
 // components
 import Users from './users'
 // other
-import { getUsersApi, followUserApi, unfollowUserApi } from '../../../../redux/usersReducer'
+import { getUsersApi, followUserApi, unfollowUserApi } from '../../../../../redux/usersReducer'
 
 const mapStateToProps = (state) => {
    return {
